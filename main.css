@@ -1,0 +1,333 @@
+a {
+    font-size: 20px;
+    font-family: 'Grenze Gotisch', cursive;
+    cursor: pointer;
+    text-decoration: none;
+    color:rgb(234, 230, 202);
+    padding: 10px 15px;
+    border: 2px solid rgb(234, 230, 202);
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
+    
+  }
+  
+  a:hover {
+    background-color: rgb(234, 230, 202);
+    color: rgb(19, 1, 4);
+  }
+  
+  body {
+    color:rgb(234, 230, 202);
+    background-color:  rgba(24, 24, 24, .9);
+    font-family: 'Lora', serif;
+    margin: 0px 0px;
+  }
+  
+  header {
+    color: rgb(234, 230, 202);
+    background-image: url('../img/homebanner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+    
+  header h1 {
+    font-weight: bold;
+    text-align:center;
+    z-index: 1;
+  }
+
+  header h1 em {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  
+    font-size: 14px;
+    padding: 20px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #links a {
+    margin: 15px;
+  }
+  
+  #logo 
+  {
+    font-size: 30px;
+    font-family: 'Grenze Gotisch', cursive;
+  }
+
+  footer {
+    background-color: rgb(31, 31, 31);
+    color: rgba(255, 255, 255, .8);
+    padding: 75px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Grenze Gotisch', cursive;
+  }
+  
+  footer p 
+  {
+    color: rgba(255, 255, 255, .4);
+  }
+
+  p 
+  {
+    line-height: 30px;
+  }
+
+
+
+.search
+  {
+    background-color: rgba(24, 24, 24, .9);
+    color: rgb(234, 230, 202);
+    border: 2px solid rgb(234, 230, 202);
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
+    width: 30%;
+    text-align: center;
+    position: relative;
+    left: 35%;
+  }
+
+  .search_img
+  {
+    width: 30px;
+    position: relative;
+    top:5px;
+    left: 35%;
+  }
+
+
+
+  .contents h1
+  {
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+  }
+
+  .contents
+  {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+  }
+
+  .contents img
+  {
+  
+    width: 250px;
+    padding: 10px 15px;
+    border: 2px solid rgb(234, 230, 202);
+    object-fit: contain;
+    }
+
+  
+  .contents button
+  {
+    margin: 10px;
+    background-color: rgba(24, 24, 24, .9);
+    color: rgb(234, 230, 202);
+    border: 2px solid rgb(234, 230, 202);
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    
+  }
+
+  
+  .tap
+  {
+    font-size: 20px;
+    font-family: 'Lora', serif;
+  }
+
+  .big_title
+  {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lora', serif;
+  }
+
+
+  .content_imagine
+  {
+    height: 300x;
+    width: 300px;
+    padding: 10px 15px;
+    border: 2px solid rgb(234, 230, 202);
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.3);  
+  }
+
+  #modale 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modale img 
+{
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.3); 
+    order: 2px solid rgb(234, 230, 202);
+}
+
+#modale.hidden
+{
+    display: none;
+}
+
+
+#modale button
+{
+    background-color: rgba(24, 24, 24, .9);
+    color: rgb(234, 230, 202);
+    border: 2px solid rgb(234, 230, 202);
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
+}
+
+#modale input[type=text]
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    width: 400px;
+    height: 100px;
+    background-color: rgba(24, 24, 24, .9);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.3); 
+    border: 2px solid rgb(234, 230, 202);
+    color:rgb(234, 230, 202);
+
+}
+
+#modale form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#modale input[type=submit]
+{
+    background-color: rgba(24, 24, 24, .9);
+    color:rgb(234, 230, 202);
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.3); 
+    border-radius:  90px;
+
+
+}
+.hidden
+{
+  display: none;
+
+}
+
+#menu_tendina
+{
+  display: none;
+
+}
+
+#modale input[type=submit]:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+}
+.no_scroll
+{
+    overflow: hidden;
+}
+
+  @media(max-width:900px)
+  {
+  
+    header nav
+    {
+      flex-direction: column;
+      z-index: 20;
+    }
+
+    #links a
+    {
+      display: block;
+      width: 100%;
+      border-radius: 0;
+      margin: 0;
+      margin-top: 15px;
+      box-sizing: border-box;
+    }
+
+    #links
+    {
+      background-color: rgba(24, 24, 24, .9);
+      width: 100%;
+      padding: 15px;
+      display: none;
+    }
+
+    #menu_tendina
+    {
+      display: block;
+      width: 20px;
+    }
+    
+
+   h1
+   {
+     font-size: 20px;
+   }
+
+ 
+   .big_title
+    {
+      font-size: smaller;
+    }
+
+
+}
+
+
